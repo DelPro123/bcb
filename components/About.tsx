@@ -8,13 +8,13 @@ const About: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-12 gap-16 items-start">
           <div className="lg:col-span-5">
-            <h2 className="text-sm font-bold text-iceBlue uppercase tracking-[0.3em] mb-8">Philosophy</h2>
+            <h2 className="text-sm font-bold text-iceBlue uppercase tracking-[0.3em] mb-8">Who BCB Is?</h2>
             <h3 className="text-4xl md:text-5xl font-display font-bold mb-8 leading-tight tracking-tight">
               A community-first network <br />
               <span className="text-gray-500 italic">built on contribution.</span>
             </h3>
             <p className="text-xl text-gray-400 leading-relaxed font-light">
-              BCB is built around practical contribution, not promotion. We are not a marketing funnel. We are a structured environment where platforms can engage with real users early, and where members can participate in new product journeys with clarity and context.
+              BCB is a community-first network built around practical contribution, not promotion. We are not a marketing funnel. We are a structured environment where platforms can engage with real users early, and where members can participate in new product journeys with clarity and context.
             </p>
           </div>
           
