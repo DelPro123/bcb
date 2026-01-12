@@ -27,19 +27,30 @@
             }
         }
     </script>
-    <script type="module" src="/index.tsx"></script>
     <style>
         :root {
             --ice-blue: #90e4ff;
         }
+        * {
+            scrollbar-width: thin;
+            scrollbar-color: #90e4ff #000000;
+        }
+        *::-webkit-scrollbar {
+            width: 6px;
+        }
+        *::-webkit-scrollbar-track {
+            background: #000000;
+        }
+        *::-webkit-scrollbar-thumb {
+            background-color: #90e4ff;
+            border-radius: 20px;
+        }
         body {
             background-color: #000000;
             color: #ffffff;
-            scrollbar-width: thin;
-            scrollbar-color: #90e4ff #000000;
             overflow-x: hidden;
+            margin: 0;
         }
-        /* Architectural Grid Background */
         .bg-grid {
             background-size: 60px 60px;
             background-image: 
@@ -50,33 +61,29 @@
             background-image: radial-gradient(rgba(144, 228, 255, 0.08) 1px, transparent 1px);
             background-size: 24px 24px;
         }
-        ::selection {
-            background: #90e4ff;
-            color: #000000;
-        }
         .text-glow {
             text-shadow: 0 0 20px rgba(144, 228, 255, 0.3);
         }
-        .glass-card {
-            background: rgba(255, 255, 255, 0.01);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(144, 228, 255, 0.05);
+        html {
+            scroll-behavior: smooth;
         }
     </style>
 <script type="importmap">
 {
   "imports": {
-    "react/": "https://esm.sh/react@^19.2.3/",
     "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
     "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2",
+    "vite": "https://esm.sh/vite@^7.3.1"
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
 </head>
 <body class="bg-grid">
     <div id="root"></div>
-<script type="module" src="/index.tsx"></script>
+    <!-- Entry point for the application -->
+    <script type="module" src="/index.tsx"></script>
 </body>
 </html>
