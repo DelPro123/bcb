@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCB Hub | Independent Consulting & Community Network</title>
+    <meta name="description" content="BCB Hub is a global independent consulting team supporting Web3, blockchain, AI, and emerging technology platforms through community testing and organic promotion.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        iceBlue: '#90e4ff',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :root {
+            --ice-blue: #90e4ff;
+        }
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            scrollbar-width: thin;
+            scrollbar-color: #90e4ff #000000;
+            overflow-x: hidden;
+        }
+        /* Architectural Grid Background */
+        .bg-grid {
+            background-size: 60px 60px;
+            background-image: 
+                linear-gradient(to right, rgba(144, 228, 255, 0.02) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(144, 228, 255, 0.02) 1px, transparent 1px);
+        }
+        .bg-dot {
+            background-image: radial-gradient(rgba(144, 228, 255, 0.08) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        ::selection {
+            background: #90e4ff;
+            color: #000000;
+        }
+        .text-glow {
+            text-shadow: 0 0 20px rgba(144, 228, 255, 0.3);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.01);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(144, 228, 255, 0.05);
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-grid">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
